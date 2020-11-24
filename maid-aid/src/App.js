@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
@@ -13,7 +11,7 @@ function App() {
     <h3>Categorias de Servicios</h3>
     <h3>Sobre Nosotros</h3>
 
-    
+
     </div>
   );
 }
