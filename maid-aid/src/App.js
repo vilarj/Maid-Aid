@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 function App() {
   return (
@@ -25,6 +26,41 @@ function App() {
         <li>Sobre Nosotros</li>
       </ul>
 */}
+    </div>
+  );
+}
+
+function DropdownMenu () {
+  const [activeMenu, setActiveMenu] = useState('main');
+  function DropdownItem (props) {
+    return (
+      <a href="#" className="menu-item">
+        <span className="icon-button"> {props.leftIcon}</span>
+        {props.children}
+        <span className="icon-right"> {props.rightIcon}</span>
+      </a>
+    );
+  }
+
+  return (
+    <div className="dropdown">
+    <CSSTransition
+    in={activeMenu === 'main'}
+    unmountOnExit
+    timeout = {500}
+    className="menu-primary">
+      <DropdownItem> My Profile </DropdownItem>
+      <DropdownItem> </DropdownItem>
+    </CSSTransition>
+
+    <CSSTransition
+    in={activeMenu === 'settings'}
+    unmountOnExit
+    timeout = {500}
+    className="menu-secundary">
+      <DropdownItem> Settings </DropdownItem>
+      <DropdownItem> </DropdownItem>
+    </CSSTransition>
     </div>
   );
 }
