@@ -1,2 +1,2 @@
 # Maid-Aid 
-## is a cleaning app that employees users for a job required by the user (employer). 
+## Maid-Aid is a cleaning app that employees users for a job required by the user (employer). 
