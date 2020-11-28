@@ -1,3 +1,2 @@
-# CleaningApp
-
-## This app is intended for supplying the needs of their users
+# Maid-Aid 
+## is a cleaning app that employees users for a job required by the user (employer). 
